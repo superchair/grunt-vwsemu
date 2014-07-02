@@ -20,6 +20,10 @@ module.exports = function (grunt) {
             request.headers['Source-Type'] = 'CFE';
             request.headers['Source-ID'] = 'CFE';
 
+            response.setHeader('Access-Control-Allow-Origin', '*');
+            response.setHeader('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
+            response.setHeader('Access-Control-Allow-Headers', 'Content-Type, Content-Length, X-Requested-With');
+
             var proxyRequestOptions = {
                 hostname: uheCfg[token].host,
                 port: uheCfg[token].port,
