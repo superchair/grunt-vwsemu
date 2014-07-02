@@ -1,6 +1,6 @@
 {
   "name": "grunt-vwsemu",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "PC VWS server emulator",
   "homepage": "https://github.com/superchair/grunt-vwsemu",
   "repository": "https://github.com/superchair/grunt-vwsemu.git",
